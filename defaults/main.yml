@@ -1,0 +1,8 @@
+---
+# defaults file for deploy
+
+docker-compose_name: docker-compose.yml
+
+repository_url: git@bitbucket.org:skrepr/project.git # Change this to the url of your project
+
+project_directory: /home/deploy/project # Change project to the name of your project
