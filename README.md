@@ -1,12 +1,14 @@
 Deploy
 =========
 
-This Ansible is used for deploying your Docker application on a Debian server
+This Ansible role is used for deploying your Docker application on a Debian server
 
 Requirements
 ------------
 
 - SSH access to the server
+- Git repository with project
+- Docker Compose file
 
 Role Variables
 --------------
@@ -14,7 +16,7 @@ Role Variables
 If you want to use a differently named docker-compose file, you can change that. The default is docker-compose.yml
 
 ```yaml
-docker-compose_name:
+docker-compose_name: docker-compose.yml
 ```
 
 Give the url of the git repo from which needs to be pulled.
@@ -26,10 +28,14 @@ repository_url:
 Give the directory where the application needs te be installed on the server. The default is /home/deploy/project
 
 ```yaml
-project_directory:
+project_directory: /home/deploy/project
 ```
 
+ Choose the branch you want to use for pulling
 
+``yaml
+git_branch: main
+```
 Dependencies
 ------------
 
@@ -37,8 +43,6 @@ None.
 
 Example Playbook
 ----------------
-
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
 ```yaml
 #!/usr/bin/env ansible-playbook
