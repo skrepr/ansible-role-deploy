@@ -1,0 +1,19 @@
+# Review when someone opens a pull request.
+# Change this to the users that are responsible for this repository. For example the lead developer
+* @jeroenvandermeulen @coderiekelt
+
+# Order is important; the last matching pattern takes the most
+# precedence. When someone opens a pull request that only
+# modifies JS files, only @js-owner and not the global
+# owner(s) will be requested for a review.
+
+# Change in .github can affect the way the repo is managed. Because of this, team infra needs to review the changes
+.github/ @skrepr/infra
+
+# Config in Ansible and Docker can drastically change the behaviour of our infrastructure and the application. Thats why thorough review by Infra is necessary 
+ansible/ @jeroenvandermeulen
+docker/ @jeroenvandermeulen
+Dockerfile @jeroenvandermeulen
+.dockerignore @jeroenvandermeulen
+docker-compose* @jeroenvandermeulen
+Makefile @jeroenvandermeulen

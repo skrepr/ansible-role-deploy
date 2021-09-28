@@ -1,0 +1,29 @@
+name: Docker build molecule container
+
+# Run workflow on tags starting with v (eg. v2, v1.2.0)
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - '/Dockerfile'
+
+jobs:
+  Deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build and Push Docker Image 
+        uses: docker/build-push-action@v2 # Docs: https://github.com/docker/build-push-action#usage
+        with:
+          context: /
+          push: true # Will only build if this is not here
+          tags: |
+            ghcr.io/${{ github.repository }}/mycontainer:latest
