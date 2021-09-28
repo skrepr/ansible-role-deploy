@@ -1,7 +1,7 @@
 ## Security
 
-Skrepr takes all security bugs in `your_application_here` seriously.
-Thank you for improving the security of `your_application_here`. We appreciate your efforts and
+Skrepr takes all security bugs in `ansible-role-deploy` seriously.
+Thank you for improving the security of `ansible-role-deploy`. We appreciate your efforts and
 responsible disclosure.
 
 If you believe you have found a security vulnerability in any skrepr-owned repository, please report it to us as described below.
@@ -16,7 +16,7 @@ If you believe you have found a security vulnerability in any skrepr-owned repos
 
 ## Reporting Security Issues
 
-Report security bugs by emailing the lead maintainer at [yourmail@skrepr.com](mailto:yourmail@skrepr.com) with a CC to [info@skrepr.com](mailto:info@skrepr.com).
+Report security bugs by emailing the lead maintainer at [jeroen@skrepr.com](mailto:jeroen@skrepr.com) with a CC to [info@skrepr.com](mailto:info@skrepr.com).
 
 The lead maintainer will acknowledge your email within 48 hours, and will send a
 more detailed response within 48 hours indicating the next steps in handling
