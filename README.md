@@ -33,9 +33,10 @@ project_directory: /home/deploy/project
 
  Choose the branch you want to use for pulling
 
-``yaml
+```yaml
 git_branch: main
 ```
+
 Dependencies
 ------------
 
