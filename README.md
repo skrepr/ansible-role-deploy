@@ -1,38 +1,66 @@
-Role Name
+Deploy
 =========
 
-A brief description of the role goes here.
+This Ansible is used for deploying your Docker application on a Debian server
 
 Requirements
 ------------
 
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
+- SSH access to the server
 
 Role Variables
 --------------
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+If you want to use a differently named docker-compose file, you can change that. The default is docker-compose.yml
+
+```yaml
+docker-compose_name:
+```
+
+Give the url of the git repo from which needs to be pulled.
+
+```yaml
+repository_url:
+```
+
+Give the directory where the application needs te be installed on the server. The default is /home/deploy/project
+
+```yaml
+project_directory:
+```
+
 
 Dependencies
 ------------
 
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+None.
 
 Example Playbook
 ----------------
 
 Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
-    - hosts: servers
-      roles:
-         - { role: username.rolename, x: 42 }
+```yaml
+#!/usr/bin/env ansible-playbook
+
+
+- hosts: production
+  become: true
+  become_flags: "--preserve-env=SSH_AUTH_SOCK"
+
+  roles:
+   - geerlingguy.git
+   - geerlingguy.docker
+   - geerlingguy.nginx
+   - skrepr.deploy
+```
 
 License
 -------
 
-BSD
+MIT / BSD
 
 Author Information
 ------------------
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+This role was created in 2021 by [Jeroen van der Meulen](https://github/jeroenvandermeulen), commisioned by [Skrepr](https://skrepr.com)
