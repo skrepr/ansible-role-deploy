@@ -22,7 +22,7 @@ docker-compose_name: docker-compose.yml
 Give the url of the git repo from which needs to be pulled.
 
 ```yaml
-repository_url:
+repository_url: git@github.com:skrepr/ansible-role-deploy.git
 ```
 
 Give the directory where the application needs te be installed on the server. The default is /home/deploy/project
