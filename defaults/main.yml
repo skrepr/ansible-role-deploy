@@ -1,11 +1,17 @@
 ---
 # defaults file for deploy
 
+# Project url can be used to fill in the name of the domain for letsencrypt ssl location
+project_url: project.com
+
 # If you want to use a differently named docker-compose file, you can change that. The default is docker-compose.yml
 docker-compose_name: docker-compose.yml
 
 # Change this to the url of your project
-repository_url: git@bitbucket.org:skrepr/project.git 
+repository_url: git@github.com:skrepr/project.git 
 
-# Change project to the name of your project
+# Choose the branch you want to use for pulling
+git_branch: main
+
+# Change project to the name of your project. This will also be used as the root of your project in reverse-proxy.conf for Nginx.
 project_directory: /home/deploy/project
