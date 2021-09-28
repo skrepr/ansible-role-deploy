@@ -1,8 +1,11 @@
 ---
 # defaults file for deploy
 
+# If you want to use a differently named docker-compose file, you can change that. The default is docker-compose.yml
 docker-compose_name: docker-compose.yml
 
-repository_url: git@bitbucket.org:skrepr/project.git # Change this to the url of your project
+# Change this to the url of your project
+repository_url: git@bitbucket.org:skrepr/project.git 
 
-project_directory: /home/deploy/project # Change project to the name of your project
+# Change project to the name of your project
+project_directory: /home/deploy/project
