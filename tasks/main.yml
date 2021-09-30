@@ -6,6 +6,10 @@
       name: acl
       state: present
 
+  - name: Install docker python package
+    pip:
+      name: docker-compose
+
   - name: Ensure deploy user is present and has SSH keys
     user:
       name: deploy
@@ -31,7 +35,7 @@
       project_src: "{{ project_directory }}"
       build: yes
       files:
-      - docker-compose.prod.yml
+      - docker-compose.yml
       nocache: true
       state: present
       restarted: yes
