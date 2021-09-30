@@ -10,7 +10,6 @@ platforms:
     image: "geerlingguy/docker-${MOLECULE_DISTRO:-debian11}-ansible:latest"
     command: ${MOLECULE_DOCKER_COMMAND:-""}
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
     privileged: true
     pre_build_image: true
