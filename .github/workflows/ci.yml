@@ -1,6 +1,6 @@
 ---
 name: CI
-'on':
+on:
   push:
     branches:
       - main
@@ -11,8 +11,7 @@ defaults:
     working-directory: 'skrepr.deploy'
 
 jobs:
-
-  lint:
+  yamllint:
     name: Lint
     runs-on: ubuntu-latest
     steps:
@@ -32,6 +31,22 @@ jobs:
       - name: Lint code.
         run: |
           yamllint .
+
+  ansible-lint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Lint Ansible Playbook
+      uses: ansible/ansible-lint-action@master
+      with:
+        targets: |
+          default/
+          handlers/
+          tasks/
+          vars/
+          requirements.yml
+
   molecule:
     name: Molecule
     runs-on: ubuntu-latest
