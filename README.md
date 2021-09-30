@@ -58,7 +58,7 @@ Example Playbook
    - geerlingguy.pip
    - geerlingguy.docker
    - geerlingguy.nginx
-   - skrepr_github.deploy
+   - skrepr.deploy
 ```
 
 License
