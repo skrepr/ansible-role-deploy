@@ -8,10 +8,12 @@ project_url: project.com
 docker-compose_name: docker-compose.yml
 
 # Change this to the url of your project
-repository_url: git@github.com:skrepr/project.git 
+repository_url: https://github.com/skrepr/skrepr-docker-test.git
 
 # Choose the branch you want to use for pulling
 git_branch: main
 
 # Change project to the name of your project. This will also be used as the root of your project in reverse-proxy.conf for Nginx.
 project_directory: /home/deploy/project
+
+ssl: true
