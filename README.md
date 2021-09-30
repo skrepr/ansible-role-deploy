@@ -55,9 +55,10 @@ Example Playbook
 
   roles:
    - geerlingguy.git
+   - geerlingguy.pip
    - geerlingguy.docker
    - geerlingguy.nginx
-   - skrepr.deploy
+   - skrepr_github.deploy
 ```
 
 License
