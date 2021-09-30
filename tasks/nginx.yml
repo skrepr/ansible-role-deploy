@@ -1,3 +1,9 @@
+- name: Remove default NGINX site config
+  file:
+    state: absent
+    path: /etc/nginx/sites-enabled/default
+
+
 - name: Copy NGINX custom configuration file for reverse-proxy into place.
   template:
     src: templates/reverse-proxy.conf.j2
@@ -9,7 +15,6 @@
     - validate nginx configuration
     - reload nginx
   ignore_errors: yes
-
 
 - name: Create a symbolic link to sites-enabled
   ansible.builtin.file:
