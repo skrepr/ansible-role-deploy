@@ -11,7 +11,8 @@ galaxy_info:
   platforms:
     - name: Debian
       versions:
-        - all
+        - buster
+        - bullseye
     - name: Ubuntu
       versions:
         - bionic
