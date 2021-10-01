@@ -39,4 +39,4 @@
       nocache: true
       state: present
       restarted: yes
-    when: testing.false
+    when: testing == "false"
