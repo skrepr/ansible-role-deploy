@@ -16,4 +16,8 @@ git_branch: main
 # Change project to the name of your project. This will also be used as the root of your project in reverse-proxy.conf for Nginx.
 project_directory: /home/deploy/project
 
+# Do you want SSL to be configured for you in NGINX? Then set this variable to true. Otherwise turn it off
 ssl: true
+
+# The last task with docker-compose can't be run in GA yet. That's why it is disabled for now when testing this role
+testing: false
