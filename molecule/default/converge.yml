@@ -7,6 +7,7 @@
     project_directory: /home/deploy/test
     git_branch: main
     ssl: false
+    testing: true
 
   pre_tasks:
   - name: Update apt cache.
