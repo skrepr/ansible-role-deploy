@@ -8,6 +8,7 @@
     git_branch: main
     ssl: false
     testing: true
+    nginx_config: true
 
   pre_tasks:
   - name: Update apt cache.

@@ -55,6 +55,13 @@ project_directory: /home/deploy/project
 git_branch: main
 ```
 
+Choose the port where the docker nginx container will be running. If you're not using nginx or a webserver in the container environment, you can disable it all together.
+
+```yaml
+nginx_config: true
+nginx_port_container: 8080
+```
+
 ## Dependencies
 
 None.
