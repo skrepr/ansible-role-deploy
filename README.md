@@ -19,9 +19,9 @@
 
 This Ansible role is used for deploying your Docker application on a Debian server
 
-[![Ansible Role](https://img.shields.io/ansible/role/56377)](https://galaxy.ansible.com/skrepr_github/deploy)
-[![Ansible Role](https://img.shields.io/ansible/role/d/56377)](https://galaxy.ansible.com/skrepr_github/deploy)
-[![Ansible Quality Score](https://img.shields.io/ansible/quality/56377)](https://galaxy.ansible.com/skrepr_github/deploy)
+[![Ansible Role](https://img.shields.io/ansible/role/56458)](https://galaxy.ansible.com/skrepr_github/deploy)
+[![Ansible Role](https://img.shields.io/ansible/role/d/56458)](https://galaxy.ansible.com/skrepr_github/deploy)
+[![Ansible Quality Score](https://img.shields.io/ansible/quality/56458)](https://galaxy.ansible.com/skrepr_github/deploy)
 
 ## Requirements
 
