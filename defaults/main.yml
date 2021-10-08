@@ -21,3 +21,5 @@ ssl: true
 
 # The last task with docker-compose can't be run in GA yet. That's why it is disabled for now when testing this role
 testing: false
+
+nginx_port_container: 8080

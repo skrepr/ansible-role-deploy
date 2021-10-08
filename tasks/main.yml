@@ -28,6 +28,7 @@
       version: "{{ git_branch }}"
 
   - include_tasks: nginx.yml
+    when: nginx_config == true
 
   - name: Build & start docker-compose
     become_user: deploy
