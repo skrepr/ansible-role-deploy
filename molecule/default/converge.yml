@@ -9,6 +9,7 @@
     ssl: false
     testing: true
     nginx_config: true
+    compose_file: docker-compose.yml
 
   pre_tasks:
   - name: Update apt cache.

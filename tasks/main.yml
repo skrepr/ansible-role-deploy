@@ -36,8 +36,7 @@
     community.docker.docker_compose:
       project_src: "{{ project_directory }}"
       build: yes
-      files:
-      - docker-compose.yml
+      files: "{{ compose_file }}"
       nocache: true
       state: present
       restarted: yes
