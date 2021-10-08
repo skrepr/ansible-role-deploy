@@ -83,4 +83,4 @@ MIT / BSD
 
 ## Author Information
 
-This role was created in 2021 by [Jeroen van der Meulen](https://github/jeroenvandermeulen), commisioned by [Skrepr](https://skrepr.com)
+This role was created in 2021 by [Jeroen van der Meulen](https://github.com/jeroenvandermeulen), commisioned by [Skrepr](https://skrepr.com)
