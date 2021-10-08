@@ -5,6 +5,10 @@ on:
     branches:
       - main
       - master
+      - develop
+    paths:
+        - "*.yml"
+        - "*.j2"
 
 defaults:
   run:
