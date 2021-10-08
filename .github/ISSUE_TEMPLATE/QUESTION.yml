@@ -1,4 +1,4 @@
-name: Bug Report
+name: Question
 description: File a bug report
 title: "[Question]: "
 labels: ["question"]
@@ -6,7 +6,7 @@ assignees:
   - jeroenvandermeulen
 body:
   - type: textarea
-    id: Ask a question
+    id: question
     attributes:
       label: What is your question?
       value: "Ask a question"
