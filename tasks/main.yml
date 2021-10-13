@@ -37,6 +37,7 @@
       project_src: "{{ project_directory }}"
       build: yes
       files: "{{ compose_file }}"
+      env_file: "{{ env_file }}"
       nocache: true
       state: present
       restarted: yes

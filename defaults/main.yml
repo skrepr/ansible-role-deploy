@@ -7,6 +7,8 @@ project_url: project.com
 # If you want to use a differently named docker-compose file, you can change that. The default is docker-compose.yml
 compose_file: docker-compose.yml
 
+env_file: .env
+
 # Change this to the url of your project
 repository_url: https://github.com/skrepr/skrepr-docker-test.git
 
