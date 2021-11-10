@@ -19,6 +19,7 @@
       ssh_key_file: .ssh/id_rsa
 
   - name: Pull changes from Git
+    become_user: deploy
     ansible.builtin.git:
       accept_hostkey: yes
       repo: "{{ repository_url }}"
@@ -41,4 +42,5 @@
       nocache: true
       state: present
       restarted: yes
+      timeout: 60
     when: testing == "false"
