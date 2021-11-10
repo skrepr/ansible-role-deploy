@@ -14,6 +14,7 @@
     user:
       name: deploy
       home: /home/deploy
+      groups: docker
       generate_ssh_key: yes
       ssh_key_bits: 2048
       ssh_key_file: .ssh/id_rsa
