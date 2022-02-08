@@ -1,6 +1,6 @@
 <a href="https://skrepr.com/">
   <p align="center">
-    <img width="200" height="100" src="https://skrepr.com/theme/skrepr/img/skrepr.svg?a3d5f79941" alt="skrepr" />
+    <img width="200" height="100" src="https://skrepr.com/wp-content/uploads/2021/10/skrepr_logo_liggend.svg" alt="skrepr" />
   </p>
 </a>
 <h1 align="center">Ansible Role Deploy</h1>
@@ -19,9 +19,9 @@
 
 This Ansible role is used for deploying your Docker application on a Debian server
 
-[![Ansible Role](https://img.shields.io/ansible/role/56458)](https://galaxy.ansible.com/skrepr_github/deploy)
-[![Ansible Role](https://img.shields.io/ansible/role/d/56458)](https://galaxy.ansible.com/skrepr_github/deploy)
-[![Ansible Quality Score](https://img.shields.io/ansible/quality/56458)](https://galaxy.ansible.com/skrepr_github/deploy)
+[![Ansible Role](https://img.shields.io/ansible/role/56860)](https://galaxy.ansible.com/skrepr/deploy)
+[![Ansible Role](https://img.shields.io/ansible/role/d/56860)](https://galaxy.ansible.com/skrepr/deploy)
+[![Ansible Quality Score](https://img.shields.io/ansible/quality/56860)](https://galaxy.ansible.com/skrepr/deploy)
 
 ## Requirements
 
